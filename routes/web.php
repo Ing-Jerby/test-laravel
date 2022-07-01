@@ -9,6 +9,8 @@ Route:: get("/posts/{id}","App\Http\Controllers\PostController@show" )->name("sh
 
 Route:: get("/posts/create","App\Http\Controllers\PostController@create" )->name("create_article");
 
+Route:: get("/register","App\Http\Controllers\PostController@register" )->name("register");
+
 Route:: post("/posts/create","App\Http\Controllers\PostController@articleCreator" )->name("articleCreator");
 
 Route:: get("/contact","App\Http\Controllers\PostController@contact" )->name("contact_page");
